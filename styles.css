@@ -1,0 +1,131 @@
+.body{
+  background-color: ;
+  background: linear-gradient(to top,#0c0523,#190bb8);
+  margin:0;
+  display: flex;
+  height: 200vh;
+}
+
+
+.t {
+    transform: translateX(10px);
+    background-color: #a19707; /* רקע לבן נקי לקופסה */
+    border: 5px solid #bfb308; /* פס דקורטיבי בצד ימין בצבע של הגרדיאנט שלך */
+    border-radius: 8px; /* פינות מעוגלות קלות */
+    padding: 20px; /* רווח פנימי בין הטקסט לקצוות הקופסה */
+    margin-bottom: 25px; /* רווח בין הקופסה הזו לאלמנטים הבאים (כמו הכפתורים) */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* צל עדין מאוד שנותן נפח */
+    max-width: 500px; /* מגביל את רוחב הקופסה כדי שהטקסט לא יימרח לכל רוחב המסך */
+}
+
+/* עיצוב הכותרת בתוך הקופסה */
+.t h3 {
+    margin-top: 0; /* מוחק רווח מיותר מלמעלה */
+    color: #333333; /* צבע כהה לכותרת */
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* עיצוב הפסקה בתוך הקופסה */
+.t p {
+    margin: 0;
+    color: #666666; /* צבע אפור כהה וקריא לטקסט */
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.6; /* רווח שורות נעים לעין */
+}
+
+
+
+
+
+
+
+.bo{
+  background-color:transparent !important;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            height: 100vh;
+            /*background-color: #f4f4f9;
+            */
+            margin: 0;
+        }
+
+.b{
+  background-color:transparent !important;
+  display: flex;
+  flex-direction: column; /* מסדר את הכפתורים אחד מתחת לשני */
+  gap: 0px; 
+}
+
+a.button {
+    transform: translateX(10px);
+    background: linear-gradient(to right, #15aa0d, #44ff34) !important;
+    display: inline-block;
+    padding: 12px 30px;
+    color: rgb(0, 0, 0) !important;
+    text-decoration: none; /* מוריד את הקו התחתון של הקישור */
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
+    margin-bottom: 5px; /* מרווח קטן בין הכפתורים */
+    transition: transform 0.2s;
+}
+
+/* אפקט מעבר עכבר חמוד */
+a.button:hover {
+    
+    transform: translateY(-5px)  translateX(20px);
+}
+
+/* 2. מוחקים לחלוטין את העיצוב האפור של הכפתור המקורי שבפנים! */
+a.button button {
+    background: transparent !important; /* הופך את רקע הדפדפן לשקוף */
+    border: none !important;             /* מוחק את המסגרת האפורה */
+    color: inherit !important;          /* לוקח את הצבע הלבן מהקישור */
+    font: inherit !important;           /* לוקח את הגופן מהקישור */
+    padding: 0 !important;              /* מוחק רווחים מיותרים */
+    cursor: pointer !important;
+    outline: none !important;
+}
+
+
+
+a.button-all {
+  transform: translateX(20px);
+    background: linear-gradient(to right, #b90505, #e55d3b) !important;
+    display: inline-block;
+    padding: 12px 30px;
+    color: rgb(0, 0, 0) !important;
+    text-decoration: none; /* מוריד את הקו התחתון של הקישור */
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
+    margin-bottom: 5px; /* מרווח קטן בין הכפתורים */
+    transition: transform 0.2s;
+}
+
+/* אפקט מעבר עכבר חמוד */
+a.button-all:hover {
+    transform: translateY(-5px) translateX(30px);
+}
+
+/* 2. מוחקים לחלוטין את העיצוב האפור של הכפתור המקורי שבפנים! */
+a.button-all button {
+    background: transparent !important; /* הופך את רקע הדפדפן לשקוף */
+    border: none !important;             /* מוחק את המסגרת האפורה */
+    color: inherit !important;          /* לוקח את הצבע הלבן מהקישור */
+    font: inherit !important;           /* לוקח את הגופן מהקישור */
+    padding: 0 !important;              /* מוחק רווחים מיותרים */
+    cursor: pointer !important;
+    outline: none !important;
+}
