@@ -97,8 +97,9 @@ a.button button {
 
 
 
-a.button-all {
-  transform: translateX(20px);
+.button-all {
+    transform: translateX(20px);
+    border: none;
     background: linear-gradient(to right, #b90505, #e55d3b) ;
     display: inline-block;
     padding: 12px 30px;
@@ -115,12 +116,12 @@ a.button-all {
 }
 
 /* אפקט מעבר עכבר חמוד */
-a.button-all:hover {
+.button-all:hover {
     transform: translateY(-5px) translateX(30px);
 }
 
 /* 2. מוחקים לחלוטין את העיצוב האפור של הכפתור המקורי שבפנים! */
-a.button-all button {
+.button-all button {
     background: transparent ; /* הופך את רקע הדפדפן לשקוף */
     border: none ;             /* מוחק את המסגרת האפורה */
     color: inherit ;          /* לוקח את הצבע הלבן מהקישור */
