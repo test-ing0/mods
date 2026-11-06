@@ -43,7 +43,7 @@
 
 
 .bo{
-  background-color:transparent !important;
+  background-color:transparent ;
             font-family: sans-serif;
             display: flex;
             justify-content: left;
@@ -55,7 +55,7 @@
         }
 
 .b{
-  background-color:transparent !important;
+  background-color:transparent ;
   display: flex;
   flex-direction: column; /* מסדר את הכפתורים אחד מתחת לשני */
   gap: 0px; 
@@ -63,10 +63,10 @@
 
 a.button {
     transform: translateX(10px);
-    background: linear-gradient(to right, #15aa0d, #44ff34) !important;
+    background: linear-gradient(to right, #15aa0d, #44ff34) ;
     display: inline-block;
     padding: 12px 30px;
-    color: rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0) ;
     text-decoration: none; /* מוריד את הקו התחתון של הקישור */
     font-family: sans-serif;
     font-weight: bold;
@@ -86,23 +86,23 @@ a.button:hover {
 
 /* 2. מוחקים לחלוטין את העיצוב האפור של הכפתור המקורי שבפנים! */
 a.button button {
-    background: transparent !important; /* הופך את רקע הדפדפן לשקוף */
-    border: none !important;             /* מוחק את המסגרת האפורה */
-    color: inherit !important;          /* לוקח את הצבע הלבן מהקישור */
-    font: inherit !important;           /* לוקח את הגופן מהקישור */
-    padding: 0 !important;              /* מוחק רווחים מיותרים */
-    cursor: pointer !important;
-    outline: none !important;
+    background: transparent ; /* הופך את רקע הדפדפן לשקוף */
+    border: none ;             /* מוחק את המסגרת האפורה */
+    color: inherit ;          /* לוקח את הצבע הלבן מהקישור */
+    font: inherit ;           /* לוקח את הגופן מהקישור */
+    padding: 0 ;              /* מוחק רווחים מיותרים */
+    cursor: pointer ;
+    outline: none ;
 }
 
 
 
 a.button-all {
   transform: translateX(20px);
-    background: linear-gradient(to right, #b90505, #e55d3b) !important;
+    background: linear-gradient(to right, #b90505, #e55d3b) ;
     display: inline-block;
     padding: 12px 30px;
-    color: rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0) ;
     text-decoration: none; /* מוריד את הקו התחתון של הקישור */
     font-family: sans-serif;
     font-weight: bold;
@@ -121,11 +121,11 @@ a.button-all:hover {
 
 /* 2. מוחקים לחלוטין את העיצוב האפור של הכפתור המקורי שבפנים! */
 a.button-all button {
-    background: transparent !important; /* הופך את רקע הדפדפן לשקוף */
-    border: none !important;             /* מוחק את המסגרת האפורה */
-    color: inherit !important;          /* לוקח את הצבע הלבן מהקישור */
-    font: inherit !important;           /* לוקח את הגופן מהקישור */
-    padding: 0 !important;              /* מוחק רווחים מיותרים */
-    cursor: pointer !important;
-    outline: none !important;
+    background: transparent ; /* הופך את רקע הדפדפן לשקוף */
+    border: none ;             /* מוחק את המסגרת האפורה */
+    color: inherit ;          /* לוקח את הצבע הלבן מהקישור */
+    font: inherit ;           /* לוקח את הגופן מהקישור */
+    padding: 0 ;              /* מוחק רווחים מיותרים */
+    cursor: pointer ;
+    outline: none ;
 }
