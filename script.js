@@ -1,13 +1,15 @@
+//onclick="downloadAllMods()
+
 function downloadAllMods() {
-    // מוצא את כל הקישורים של המודים שיש להם את הקלאס button
-    const links = document.querySelectorAll('a.button');
+    // 👑 השינוי כאן: מחפשים רק קישורי button שנמצאים בתוך הדיב של המודים (class="b")
+    const links = document.querySelectorAll('.cm a.button');
     
     if (links.length === 0) {
-        alert("לא נמצאו מודים להורדה בדף!");
+        alert("לא נמצאו מודים להורדה בתוך תיקיית המודים!");
         return;
     }
 
-    // רץ על כל קישור ומוריד אותו בהפרש של 300 מילישניות כדי שהדפדפן לא ייחסם
+    // רץ על כל קישור ומוריד אותו בהפרש של 300 מילישניות
     links.forEach((link, index) => {
         setTimeout(() => {
             const downloadLink = document.createElement('a');
