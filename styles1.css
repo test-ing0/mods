@@ -132,8 +132,16 @@ a.button button {
 }
 
 .vbody {
+    
     display: flex;
     justify-content: right;
     align-items: right;
+    flex-direction:row;
+}
+.cm {
+  background-color:transparent ;
+  display: flex;
+  flex-direction: column; /* מסדר את הכפתורים אחד מתחת לשני */
+  gap: 0px; 
 
 }
