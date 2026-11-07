@@ -130,3 +130,10 @@ a.button button {
     cursor: pointer ;
     outline: none ;
 }
+
+.vbody {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+
+}
