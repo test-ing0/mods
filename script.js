@@ -1,7 +1,7 @@
 //onclick="downloadAllMods()
 
 function downloadAllMods() {
-    // 👑 השינוי כאן: מחפשים רק קישורי button שנמצאים בתוך הדיב של המודים (class="b")
+    //  השינוי כאן: מחפשים רק קישורי button שנמצאים בתוך הדיב של המודים (class="b")
     const links = document.querySelectorAll('.cm a.button');
     
     if (links.length === 0) {

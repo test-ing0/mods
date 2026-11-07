@@ -3,7 +3,7 @@
   background: linear-gradient(to top,#0c0523,#190bb8);
   margin:0;
   display: flex;
-  height: 200vh;
+  height: 220vh;
 }
 
 
@@ -46,8 +46,8 @@
   background-color:transparent ;
             font-family: sans-serif;
             display: flex;
-            justify-content: left;
-            align-items: left;
+            justify-content: ;
+            align-items: ;
             height: 100vh;
             /*background-color: #f4f4f9;
             */
@@ -131,12 +131,12 @@ a.button button {
     outline: none ;
 }
 
-.vbody {
+.vdiv {
     
     display: flex;
     justify-content: right;
     align-items: right;
-    flex-direction:row;
+    
 }
 .cm {
   background-color:transparent ;
@@ -144,4 +144,43 @@ a.button button {
   flex-direction: column; /* מסדר את הכפתורים אחד מתחת לשני */
   gap: 0px; 
 
+}
+
+
+
+/* המיכל שמחזיק את הכפתורים בצד ימין */
+.sidebar-buttons {
+    position: fixed;   /* נועץ את התפריט למסך */
+    top: 15%;          /* ממקם אותו באמצע הגובה של המסך */
+    right: 20px;       /* מרחק של 20 פיקסלים מהצד הימני של המסך */
+    transform: translateY(-50%); /* מיישר בדיוק למרכז האנכי */
+    display: flex;
+    flex-direction: column; /* מסדר את הכפתורים אחד מתחת לשני */
+    gap: 12px;         /* רווח בין הכפתורים */
+    z-index: 1000;     /* דואג שהם תמיד יהיו מעל שאר התוכן באתר */
+}
+
+/* עיצוב משותף לכל הכפתורים והקישורים בצד */
+.side-btn {
+    /* מעבר צבעים סגול-כחול מודרני כדי להבדיל אותם מהמודים */
+    background: linear-gradient(135deg, #7303c0, #ec38bc) !important;
+    
+    color: rgb(3, 3, 42) !important;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 12px 18px;
+    border: none !important;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* אפקט במעבר עכבר (Hover) */
+.side-btn:hover {
+    transform: scale(1.05); /* הגדלה קלה של הכפתור */
+    box-shadow: 0 6px 15px rgba(236, 56, 188, 0.4);
 }
