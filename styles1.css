@@ -1,5 +1,5 @@
 .body{
-  background-color: ;
+  /*background-color: ; */
   background: linear-gradient(to top,#0c0523,#190bb8);
   margin:0;
   display: flex;
@@ -46,8 +46,8 @@
   background-color:transparent ;
             font-family: sans-serif;
             display: flex;
-            justify-content: ;
-            align-items: ;
+            justify-content: left;
+            align-items: left;
             height: 100vh;
             /*background-color: #f4f4f9;
             */
