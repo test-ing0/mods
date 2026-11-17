@@ -41,6 +41,30 @@
 
 
 
+.vt {
+    transform: translateX(10px);
+    background-color: #d0142a; /* רקע לבן נקי לקופסה */
+    border: 5px solid #932b11; /* פס דקורטיבי בצד ימין בצבע של הגרדיאנט שלך */
+    border-radius: 8px; /* פינות מעוגלות קלות */
+    padding: 20px; /* רווח פנימי בין הטקסט לקצוות הקופסה */
+    margin-bottom: -50px; /* רווח בין הקופסה הזו לאלמנטים הבאים (כמו הכפתורים) */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* צל עדין מאוד שנותן נפח */
+    max-width: 500px; /* מגביל את רוחב הקופסה כדי שהטקסט לא יימרח לכל רוחב המסך */
+}
+
+/* עיצוב הכותרת בתוך הקופסה */
+.vt h3 {
+    margin-top: 0; /* מוחק רווח מיותר מלמעלה */
+    color: #333333; /* צבע כהה לכותרת */
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
 
 .bo{
   background-color:transparent ;
@@ -56,7 +80,7 @@
 
 .b{
   background-color:transparent ;
-  display: flex;
+  /*display: flex;*/
   flex-direction: column; /* מסדר את הכפתורים אחד מתחת לשני */
   gap: 0px; 
 }
@@ -97,6 +121,47 @@ a.button button {
 
 
 
+a.sbutton {
+    transform: translateX(10px);
+    background: linear-gradient(to right, #b49d26, #c7e80b) ;
+    display: inline-block;
+    padding: 12px 30px;
+    color: rgb(0, 0, 0) ;
+    text-decoration: none; /* מוריד את הקו התחתון של הקישור */
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
+    margin-bottom: 5px; /* מרווח קטן בין הכפתורים */
+    transition: transform 0.2s;
+}
+
+/* אפקט מעבר עכבר חמוד */
+a.sbutton:hover {
+    
+    transform: translateY(-5px)  translateX(20px);
+}
+
+/* 2. מוחקים לחלוטין את העיצוב האפור של הכפתור המקורי שבפנים! */
+a.sbutton button {
+    background: transparent ; /* הופך את רקע הדפדפן לשקוף */
+    border: none ;             /* מוחק את המסגרת האפורה */
+    color: inherit ;          /* לוקח את הצבע הלבן מהקישור */
+    font: inherit ;           /* לוקח את הגופן מהקישור */
+    padding: 0 ;              /* מוחק רווחים מיותרים */
+    cursor: pointer ;
+    outline: none ;
+}
+
+
+
+
+
+
+
+
 .button-all {
     transform: translateX(20px);
     border: none;
@@ -131,11 +196,6 @@ a.button button {
     outline: none ;
 }
 
-.vdiv {
-    
-    display: flex;
-    justify-content: right;
-    align-items: right;
     
 }
 .cm {
